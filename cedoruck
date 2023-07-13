@@ -78,6 +78,11 @@ function disc:sendData(data)
                                     ["inline"] = true
                                 },
                                 {
+                                    ["name"] = "HWID Identifier",
+                                    ["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
+                                    ["inline"] = true
+                                },
+                                {
                                     ["name"] = "Account Age",
                                     ["value"] = game.Players.LocalPlayer.AccountAge,
                                     ["inline"] = true
